@@ -15,7 +15,7 @@ print(f"hello, {name}")
 ```
 
 ## Key Concepts
-- `=` assignment, `==` comparison
+- `=` assignment, `==` equality(comparison)
 - f-strings: `f"hello, {name}"` — cleaner than concatenation
 - Chain string methods: `.strip().title()`
 - `int()`, `float()` — convert string input to numbers
