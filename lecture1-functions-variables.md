@@ -2,6 +2,9 @@
 
 # CS50P — Week 0: Functions & Variables
 
+> Notes written while following along with CS50P lectures.
+> Formatted and cleaned up after each session.
+
 ## Core Built-in Functions
 - `print()` → displays output to screen (side effect)
 - `input()` → takes user input, always returns a **string**
