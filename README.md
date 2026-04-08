@@ -2,6 +2,9 @@
 
 Personal learning notes from Harvard's CS50's Introduction to Programming with Python.
 
+> Notes written while following along with CS50P lectures.
+> Formatted and cleaned up after each session.
+
 ## Important Note
 These are only my own summaries and examples from the lectures.
 I am not posting any Problem Set solutions here.
