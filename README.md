@@ -16,3 +16,5 @@ This follows CS50's Academic Honesty policy.
 
 ## Lecture Notes
 - [Week 0: Functions & Variables](./week0-functions-variables.md)
+- [Week 1: Conditionals](./week1-conditionals.md)
+
