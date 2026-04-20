@@ -4,8 +4,8 @@
 
 ## What I Built
 - **Einstein** — asked user to enter mass in kg and calculated energy in joules using E=mc², where c = speed of light in vacuum = 3 × 10⁸ m/s
-- **Tip Calculator** — built a calculator that asks user to enter cost of meal and percentage they want to tip, then calculates and displays the tip amount
-
+- **Tip Calculator** — built a calculator for restaurants that asks the user to enter the cost of meal and tip percentage, then calculates and displays the tip amount
+- 
 ## Core Built-in Functions
 - `print()` → displays output to screen (side effect)
 - `input()` → takes user input, always returns a **string**
