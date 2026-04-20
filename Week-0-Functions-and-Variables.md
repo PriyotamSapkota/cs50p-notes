@@ -3,6 +3,9 @@
 > Formatted and cleaned up after each session.
 
 ## What I Built
+- **Indoor Voice** — asked user to enter text and converted it all to lowercase without removing punctuation or spaces
+- **Playback Speed** — asked user for input and replaced each blank space with three dots ("...")
+- **Making Faces** — asked user to enter an emoticon and converted it to a matching emoji (happy or sad) and displayed the output
 - **Einstein** — asked user to enter mass in kg and calculated energy in joules using E=mc², where c = speed of light in vacuum = 3 × 10⁸ m/s
 - **Tip Calculator** — built a calculator for restaurants that asks the user to enter the cost of meal and tip percentage, then calculates and displays the tip amount
 
