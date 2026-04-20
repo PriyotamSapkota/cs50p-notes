@@ -15,6 +15,7 @@ This follows CS50's Academic Honesty policy.
 - VS Code / CS50 Codespace
 
 ## Lecture Notes
-- [Week 0: Functions & Variables](./Week 0: Functions & Variables)
-- [Week 1: Conditionals](./week1-conditionals.md)
+- [Week 0: Functions & Variables](./Week-0-Functions-and-Variables.md
+)
+- [Week 1: Conditionals](./Week-1-Conditionals.md)
 
