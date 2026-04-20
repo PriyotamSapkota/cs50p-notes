@@ -1,7 +1,13 @@
 # CS50P — Week 1: Conditionals
-
 > Notes written while following along with CS50P lectures.
 > Formatted and cleaned up after each session.
+
+## What I Built
+- **Deep Thought** — 
+- **Home Federal Savings Bank** — 
+- **File Extensions** — 
+- **Math Interpreter** — 
+- **Meal Time** — 
 
 ## Comparison Operators
 - `>` greater than
@@ -11,6 +17,11 @@
 - `==` equality (comparison)
 - `!=` not equal to
 - `=` is assignment, not comparison
+
+## Boolean Expressions
+- A **Boolean expression** is any expression that evaluates to `True` or `False`
+- Same concept from mathematics — yes or no, true or false
+- Every condition inside `if`, `elif` is a Boolean expression
 
 ## if / elif / else
 ```python
@@ -27,9 +38,14 @@ else:
 - `if` — asks the first question
 - `elif` — only asked if previous condition was false
 - `else` — catches everything remaining, no question needed
-- Once a true condition is found, the rest are skipped
+- Once a true condition is found, the rest are skipped — **mutually exclusive**
 - Indentation is required — Python uses it instead of `{}` like C or JavaScript
 - Colon `:` is required after every condition
+
+### Why elif over multiple ifs?
+- Using all `if` instead of `elif` means every condition is checked every time
+- With `elif`, Python stops as soon as it finds a true condition — fewer questions, more efficient
+- Doesn't feel faster on small code but matters a lot in larger programs
 
 ## and / or
 ```python
@@ -39,6 +55,8 @@ if x < y or x > y:
 if x != y:           # cleaner version of above
     print("x is not equal to y")
 ```
+- `or` — true if at least one condition is true
+- `and` — true only if both conditions are true
 
 ## Grade Example (clean version)
 ```python
@@ -56,8 +74,37 @@ else:
     print("Grade: F")
 ```
 - Once a condition matches, Python stops checking — no need to write `and score < 90`
+- You can also write `90 <= score <= 100` — Python supports chained comparisons unlike most languages
 
 ## Parity (Even or Odd)
+- `%` is **modulo** — returns the remainder after division
+- `10 % 2 == 0` → even, `11 % 2 == 1` → odd
+
+### Three versions — from basic to Pythonic
+
+**Version 1 — explicit if/else:**
+```python
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+```
+
+**Version 2 — ternary expression:**
+```python
+def is_even(n):
+    return True if n % 2 == 0 else False
+```
+
+**Version 3 — most Pythonic:**
+```python
+def is_even(n):
+    return n % 2 == 0
+```
+- `n % 2 == 0` is itself a Boolean expression — no need for `if/else` inside the function
+- **Pythonic** means writing code in the way Python is designed to be written — clean, readable, close to plain English
+
 ```python
 def main():
     x = int(input("What's x? "))
@@ -67,12 +114,10 @@ def main():
         print("Odd")
 
 def is_even(n):
-    return n % 2 == 0       # most pythonic version
+    return n % 2 == 0
 
 main()
 ```
-- `%` is modulo — returns remainder after division
-- `n % 2 == 0` is itself a Boolean, so no need for `if/else` inside the function
 
 ## match (like switch in other languages)
 ```python
@@ -87,5 +132,6 @@ match name:
         print("Who?")
 ```
 - `match` is cleaner than long `if/elif` chains when comparing one variable to many values
-- `|` means or inside a case
+- `|` means or inside a case — groups multiple values with the same output
 - `case _` is the default (same as `else`)
+- More powerful than a basic `if/elif` chain for pattern matching
